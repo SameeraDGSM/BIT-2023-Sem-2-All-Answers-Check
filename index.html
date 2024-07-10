@@ -1,37 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bootstrap Dropdown Menu Example</title>
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-    />
-  </head>
-  <body>
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">Brand</a>
-        </div>
-        <ul class="nav navbar-nav">
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-              >Dropdown <span class="caret"></span
-            ></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Item one</a></li>
-              <li><a href="#">Item two</a></li>
-              <li><a href="#">Item three</a></li>
-              <li><a href="#">Any other</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Example</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="container mt-5">
+    <h1 class="mb-4">My First Heading</h1>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  </body>
+    <p class="mb-4">My first paragraph.</p>
+
+    <img src="https://images.filmibeat.com/webp/ph-big/2024/02/ileana-d-cruz_17089465801.jpg" alt="W3Schools.com" class="img-fluid mb-4" width="20%">
+
+    <hr>
+    <ul class="list-unstyled mb-4">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+    <hr>
+    <a href="https://images.filmibeat.com/webp/ph-big/2024/02/ileana-d-cruz_17089465801.jpg">This is a link</a>
+
+    <hr>
+    <ol type="a" start="1" class="mb-4">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+    <hr>
+
+    <dl class="row">
+        <dt class="col-sm-3">HTML</dt>
+        <dd class="col-sm-9">HyperText Markup Language</dd>
+        <dt class="col-sm-3">OS</dt>
+        <dd class="col-sm-9">Operating System</dd>
+        <dt class="col-sm-3">CSS</dt>
+        <dd class="col-sm-9">Cascading Style Sheets</dd>
+    </dl>
+
+    <hr>
+
+    <table class="table table-bordered mb-4">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Name</th>
+                <th>Address</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td colspan="3">Information about data</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Saman</td>
+                <td>Colombo 1</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Gayan</td>
+                <td>Kandy</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <table class="table table-bordered mb-4">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Name</th>
+                <th>Address</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td colspan="3">Information about data</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td></td>
+                <td>Colombo 1</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Gayan</td>
+                <td>Kandy</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+    <figure class="mb-4">
+        <img src="https://i.pinimg.com/736x/cb/be/01/cbbe010ae230865fe6e6637bf455beff.jpg" alt="Wow" class="img-fluid mb-2" width="30%" usemap="#CAN">
+        <map name="CAN">
+            <area shape="RECT" coords="0,0,100,100" href="Comet01.html" alt="xxx">
+            <area shape="CIRCLE" coords="300,200,100" href="Comet02.html" alt="yyy">
+            <area shape="POLY" coords="8,38,87,63" href="http://www.yahoo.com" alt="bbb">
+        </map>
+        <figcaption>Beautiful Lady Gaga</figcaption>
+    </figure>
+    <hr>
+    <address>
+        <a href="mailto:sameeradgsm@gemail.co">Email to Bosa SAM</a>
+    </address>
+
+    <hr color="blue" size="10">
+
+    <input type="password" name="textbox name" class="form-control mb-4" size="20" placeholder="Enter the Password">
+
+    <hr color="red" size="25" width="100%" align="left">
+
+    <select name="fruit" class="form-control mb-4">
+        <option>Banana</option>
+        <option>Pineapple</option>
+        <option selected>Star fruit</option>
+        <option>Mango</option>
+    </select>
+    <hr color="green" size="25" width="100%" align="left">
+    <select name="vegetable" class="form-control mb-4" multiple size="3">
+        <option>Go-ya</option>
+        <option>Papaya</option>
+        <option>Carrot</option>
+        <option>Egg</option>
+        <option>Fish</option>
+    </select>
+
+    <hr color="green" size="25" width="100%" align="left">
+    <div class="form-check mb-4">
+        <input type="radio" name="gender" value="WOMAN" class="form-check-input" id="female">
+        <label for="female" class="form-check-label">Female</label><br>
+        <input type="radio" name="gender" value="MAN" class="form-check-input" id="male">
+        <label for="male" class="form-check-label">Male</label><br>
+    </div>
+    <hr>
+    <div class="form-check mb-4">
+        <input type="checkbox" name="Colombo" class="form-check-input" id="colombo">
+        <label for="colombo" class="form-check-label">Colombo</label><br>
+        <input type="checkbox" name="Kandy" class="form-check-input" id="kandy">
+        <label for="kandy" class="form-check-label">Kandy</label><br>
+        <input type="checkbox" name="Rathnapura" class="form-check-input" id="rathnapura">
+        <label for="rathnapura" class="form-check-label">Rathnapura</label><br>
+        <input type="checkbox" name="Mathara" class="form-check-input" id="mathara">
+        <label for="mathara" class="form-check-label">Mathara</label><br>
+    </div>
+
+    <hr>
+
+    <textarea name="message" class="form-control mb-4" rows="5" cols="100">Please write your comments here</textarea>
+
+    <hr>
+    <input type="submit" class="btn btn-primary mb-4" value="Send">
+    <input type="reset" class="btn btn-secondary mb-4" value="Cancel">
+
+    <hr>
+    <form>
+        <div class="form-group">
+            <label for="color">Color:</label>
+            <input type="color" id="color" name="color" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="datetime">Datetime:</label>
+            <input type="datetime" id="datetime" name="datetime" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="datetime-local">Datetime Local:</label>
+            <input type="datetime-local" id="datetime-local" name="datetime-local" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="month">Month:</label>
+            <input type="month" id="month" name="month" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="number">Number:</label>
+            <input type="number" id="number" name="number" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="range">Range:</label>
+            <input type="range" id="range" name="range" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="search">Search:</label>
+            <input type="search" id="search" name="search" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="tel">Telephone:</label>
+            <input type="tel" id="tel" name="tel" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="url">URL:</label>
+            <input type="url" id="url" name="url" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="week">Week:</label>
+            <input type="week" id="week" name="week" class="form-control">
+        </div>
+        <input type="submit" class="btn btn-primary mb-4" value="Submit">
+    </form>
+    <hr>
+    <p>Numeric restrictions will apply in the input field.</p>
+    <form action="action_page.php" method="post" class="mb-4">
+        <div class="form-group">
+            <label for="quantity">Quantity (between 1 and 5):</label>
+            <input type="number" id="quantity" name="quantity" class="form-control" min="1" max="5" required>
+        </div>
+        <input type="submit" class="btn btn-primary" value="Submit">
+    </form>
+    <hr>
+    <form action="action_page.php" method="post" class="mb-4">
+        <div class="form-group">
+            <input type="text" name="fname" class="form-control mb-2" placeholder="First name" required>
+            <input type="text" name="lname" class="form-control mb-2" placeholder="Last name" required>
+        </div>
+        <input type="submit" class="btn btn-primary" value="Submit">
+    </form>
+
+    <hr>
+    <form action="action_page.php" method="post">
+        <fieldset class="border p-2">
+            <legend class="w-auto">Personalia:</legend>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of birth:</label>
+                <input type="date" id="dob" name="dob" class="form-control" required>
+            </div>
+        </fieldset>
+        <input type="submit" class="btn btn-primary mt-3" value="Submit">
+    </form>
+    <hr>
+    <table class="table table-bordered bg-light mb-4">
+        <tr>
+            <td>
+                <h4>Facts About Beavers</h4>
+                <ul class="list-unstyled">
+                    <li><a href="habitat.html" target="abc">Habitats</a></li>
+                    <li><a href="food.html" target="abc">Food</a></li>
+                    <li><a href="health.html" target="abc">Health</a></li>
+                </ul>
+                <iframe name="abc" src="im1.jpg" width="300" height="200"></iframe>
+            </td>
+        </tr>
+    </table>
+    <hr>
+    <p>The character U+10FFFF: &#54440;</p>
+    <hr>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
 </html>
+
