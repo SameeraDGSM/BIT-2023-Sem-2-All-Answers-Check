@@ -1,289 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap Example</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body class="container mt-5">
-    <h1 class="mb-4">My First Heading</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marking Forms</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        padding-top: 56px; /* Padding to avoid navbar overlap */
+        background: url("Im1.jpg") no-repeat center center fixed;
+        background-size: cover;
+        color: #fff; /* Ensure text is visible on dark background */
+      }
+      .container {
+        padding-top: 30px;
+        background: rgba(0, 0, 0, 0.8); /* Dark background with transparency */
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+      }
+      .navbar-brand {
+        font-weight: bold;
+      }
+      .nav-link {
+        font-size: 1.1rem;
+      }
+      iframe {
+        width: 100%;
+        height: 800px;
+        border: none;
+      }
+      .content-section {
+        display: none;
+      }
+      .subscribe-section p,
+      .donate-section p {
+        color: #333; /* Dark text color for better readability */
+      }
+      .subscribe-section a {
+        color: #fff; /* White text color for button */
+      }
+      .donate-section .card-title,
+      .donate-section .card-text {
+        color: #333; /* Dark text color for better readability */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Marking Forms</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#welcome"
+                onclick="showSection('welcome')"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://sameeradgsm.github.io/EN2106-Marking-Form/"
+                target="_blank"
+                >EN2106</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://sameeradgsm.github.io/IT2106-Marking-Form/"
+                target="_blank"
+                >IT2106</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://sameeradgsm.github.io/IT2206-Marking-Form/"
+                target="_blank"
+                >IT2206</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://sameeradgsm.github.io/IT2306-Marking-Form/"
+                target="_blank"
+                >IT2306</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://sameeradgsm.github.io/IT2406-Marking-Form/"
+                target="_blank"
+                >IT2406</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-    <p class="mb-4">My first paragraph.</p>
-    <a href="https://www.youtube.com/@TDS-sami"><img src="https://images.filmibeat.com/webp/ph-big/2024/02/ileana-d-cruz_17089465801.jpg" alt="W3Schools.com" class="img-fluid mb-4" width="5%">
-</a>
+    <!-- Main Content -->
+    <div class="container mt-5 p-4">
+      <div id="welcome" class="content-section">
+        <h1 class="text-center">Welcome to the Marking Forms Page</h1>
+        <p class="text-center">
+          Select a form from the navigation bar to proceed.
+        </p>
 
+        <div id="en2106" class="content-section">
+          <ul>
+            <li>
+              <a
+                href="https://sameeradgsm.github.io/EN2106-Marking-Form/"
+                target="_blank"
+                >EN2106 Marking Form</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://sameeradgsm.github.io/IT2106-Marking-Form/"
+                target="_blank"
+                >IT2106 Marking Form</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://sameeradgsm.github.io/IT2206-Marking-Form/"
+                target="_blank"
+                >IT2206 Marking Form</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://sameeradgsm.github.io/IT2306-Marking-Form/"
+                target="_blank"
+                >IT2306 Marking Form</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://sameeradgsm.github.io/IT2406-Marking-Form/"
+                target="_blank"
+                >IT2406 Marking Form</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
 
-    
-    <hr>
-    <ul class="list-unstyled mb-4">
-        <li>Coffee</li>
-        <li>Tea</li>
-        <li>Milk</li>
-    </ul>
-    <hr>
-    
+      <hr />
+      <div class="text-center mt-4 subscribe-section">
+        <!-- Request Text and YouTube Subscribe Button -->
+        <p class="mb-3" style="font-size: 1.25rem; color: #ffffff">
+          Enjoying the content? <strong>Subscribe to my channel</strong> and
+          stay updated with helpful videos/Apps!
+        </p>
+        <a
+          href="https://www.youtube.com/@TDS-sami?sub_confirmation=1"
+          target="_blank"
+          class="btn btn-danger btn-lg d-inline-flex align-items-center"
+          style="
+            font-size: 1.25rem;
+            padding: 12px 24px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, box-shadow 0.3s;
+          "
+          role="button"
+          aria-label="Subscribe to YouTube Channel"
+        >
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="mr-2"
+          >
+            <path
+              d="M22.54 6.42c-.22-1.4-1.09-2.51-2.48-2.82C18.43 3.43 12 3.43 12 3.43s-6.43 0-8.06.17C2.55 3.91 1.68 5.02 1.46 6.42.67 8.9.67 12 1.46 14.58c.22 1.4 1.09 2.51 2.48 2.82C5.57 17.57 12 17.57 12 17.57s6.43 0 8.06-.17c1.39-.31 2.26-1.42 2.48-2.82.79-2.58.79-5.68 0-8.26zM10 15.6v-7.2l5.4 3.6-5.4 3.6z"
+              fill="#fff"
+            />
+          </svg>
+          Subscribe
+        </a>
+      </div>
 
-    <hr>
-    <ol type="a" start="1" class="mb-4">
-        <li>Coffee</li>
-        <li>Tea</li>
-        <li>Milk</li>
-    </ol>
-    <hr>
-
-    <dl class="row">
-        <dt class="col-sm-3">HTML</dt>
-        <dd class="col-sm-9">HyperText Markup Language</dd>
-        <dt class="col-sm-3">OS</dt>
-        <dd class="col-sm-9">Operating System</dd>
-        <dt class="col-sm-3">CSS</dt>
-        <dd class="col-sm-9">Cascading Style Sheets</dd>
-    </dl>
-
-    <hr>
-
-    <table class="table table-bordered mb-4">
-        <thead>
-            <tr>
-                <th>No</th>
-                <th>Name</th>
-                <th>Address</th>
-            </tr>
-        </thead>
-        <tfoot>
-            <tr>
-                <td colspan="3">Information about data</td>
-            </tr>
-        </tfoot>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>Saman</td>
-                <td>Colombo 1</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Gayan</td>
-                <td>Kandy</td>
-            </tr>
-        </tbody>
-    </table>
-    <hr>
-    <table class="table table-bordered mb-4">
-        <thead>
-            <tr>
-                <th>No</th>
-                <th>Name</th>
-                <th>Address</th>
-            </tr>
-        </thead>
-        <tfoot>
-            <tr>
-                <td colspan="3">Information about data</td>
-            </tr>
-        </tfoot>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td></td>
-                <td>Colombo 1</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Gayan</td>
-                <td>Kandy</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <hr>
-    <figure class="mb-4">
-
-
-    <img src="https://i.pinimg.com/736x/cb/be/01/cbbe010ae230865fe6e6637bf455beff.jpg" alt="Wow" class="img-fluid mb-2" width="15%" usemap="#CAN">
- 
- 
-        
-        <map name="CAN">
-            <area shape="RECT" coords="0,0,400,400" href="https://www.youtube.com/watch?v=lX6-WPQwyrM" alt="xxx">
-            <area shape="CIRCLE" coords="200,200,200" href="https://www.youtube.com/watch?v=Zcj6-fqLoWc&list=PLq4hQsoQE0kbUyrlCgyZIWtc4gf91kGEz" alt="yyy">
-            <area shape="POLY" coords="8,38,87,63,450,450,1000,1000" href="https://www.youtube.com/watch?v=iC5L0SmOiyw&list=PLq4hQsoQE0kaQ3PlJRfUZNg5iRlwNwJPr" alt="bbb">
-        </map>
-        <figcaption>Beautiful Lady Girl from India</figcaption>
-    </figure>
-    <hr>
-    <address>
-        <a href="mailto:sameeradgsm@yahoo.con">Email to  SAMDGSM</a>
-    </address>
-
-    <hr color="blue" size="10">
-
-    <input type="password" name="textbox name" class="form-control mb-4" size="20" placeholder="Enter the Password">
-
-    <hr color="red" size="25" width="100%" align="left">
-
-    <select name="fruit" class="form-control mb-4">
-        <option>Banana</option>
-        <option>Pineapple</option>
-        <option selected>Star fruit</option>
-        <option>Mango</option>
-    </select>
-    <hr color="green" size="25" width="100%" align="left">
-    <select name="vegetable" class="form-control mb-4" multiple size="3">
-        <option>Go-ya</option>
-        <option>Papaya</option>
-        <option>Carrot</option>
-        <option>Egg</option>
-        <option>Fish</option>
-    </select>
-
-    <hr color="green" size="25" width="100%" align="left">
-    <div class="form-check mb-4">
-        <input type="radio" name="gender" value="WOMAN" class="form-check-input" id="female">
-        <label for="female" class="form-check-label">Female</label><br>
-        <input type="radio" name="gender" value="MAN" class="form-check-input" id="male">
-        <label for="male" class="form-check-label">Male</label><br>
+      <div class="card text-center mt-3 donate-section">
+        <div class="card-body">
+          <h5 class="card-title">Support Me</h5>
+          <p class="card-text">
+            Your donation helps me to keep providing valuable content.
+          </p>
+          <!-- PayPal Donate Button -->
+          <form
+            action="https://www.paypal.com/donate"
+            method="post"
+            target="_top"
+          >
+            <input
+              type="hidden"
+              name="hosted_button_id"
+              value="QNHE9KD5JSVRW"
+            />
+            <input
+              type="image"
+              src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"
+              border="0"
+              name="submit"
+              title="PayPal - The safer, easier way to pay online!"
+              alt="Donate with PayPal button"
+            />
+            <img
+              alt=""
+              border="0"
+              src="https://www.paypal.com/en_US/i/scr/pixel.gif"
+              width="1"
+              height="1"
+            />
+          </form>
+        </div>
+      </div>
     </div>
-    <hr>
-    <div class="form-check mb-4">
-        <input type="checkbox" name="Colombo" class="form-check-input" id="colombo">
-        <label for="colombo" class="form-check-label">Colombo</label><br>
-        <input type="checkbox" name="Kandy" class="form-check-input" id="kandy">
-        <label for="kandy" class="form-check-label">Kandy</label><br>
-        <input type="checkbox" name="Rathnapura" class="form-check-input" id="rathnapura">
-        <label for="rathnapura" class="form-check-label">Rathnapura</label><br>
-        <input type="checkbox" name="Mathara" class="form-check-input" id="mathara">
-        <label for="mathara" class="form-check-label">Mathara</label><br>
-    </div>
 
-    <hr>
-    <a href="https://www.youtube.com/watch?v=CV3gzAXQLJY">
-    <img src="https://images.pexels.com/photos/255387/pexels-photo-255387.jpeg" alt="Wow" class="img-fluid mb-2" width="50%" >
-</a>
-
-    <textarea name="message" class="form-control mb-4" rows="5" cols="100">Please write your comments here</textarea>
-
-    <hr>
-    <input type="submit" class="btn btn-primary mb-4" value="Send">
-    <input type="reset" class="btn btn-secondary mb-4" value="Cancel">
-
-    <hr>
-    <form>
-        <div class="form-group">
-            <label for="color">Color:</label>
-            <input type="color" id="color" name="color" class="form-control">
-        </div>
-        <div class="form-group">
-            <label for="date">Date:</label>
-            <input type="date" id="date" name="date" class="form-control">
-        </div>
-        <div class="form-group">
-            <label for="datetime">Datetime:</label>
-            <input type="datetime" id="datetime" name="datetime" class="form-control">
-        </div>
-        <div class="form-group">
-            <label for="datetime-local">Datetime Local:</label>
-            <input type="datetime-local" id="datetime-local" name="datetime-local" class="form-control">
-        </div>
-        <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" class="form-control">
-        </div>
-        <div class="form-group">
-            <label for="month">Month:</label>
-            <input type="month" id="month" name="month" class="form-control">
-        </div>
-        <div class="form-group">
-            <label for="number">Number:</label>
-            <input type="number" id="number" name="number" class="form-control">
-        </div>
-        <div class="form-group">
-            <label for="range">Range:</label>
-            <input type="range" id="range" name="range" class="form-control">
-        </div>
-        <div class="form-group">
-            <label for="search">Search:</label>
-            <input type="search" id="search" name="search" class="form-control">
-        </div>
-        <div class="form-group">
-            <label for="tel">Telephone:</label>
-            <input type="tel" id="tel" name="tel" class="form-control">
-        </div>
-        <div class="form-group">
-            <label for="time">Time:</label>
-            <input type="time" id="time" name="time" class="form-control">
-        </div>
-        <div class="form-group">
-            <label for="url">URL:</label>
-            <input type="url" id="url" name="url" class="form-control">
-        </div>
-        <div class="form-group">
-            <label for="week">Week:</label>
-            <input type="week" id="week" name="week" class="form-control">
-        </div>
-        <input type="submit" class="btn btn-primary mb-4" value="Submit">
-    </form>
-    <hr>
-    <p>Numeric restrictions will apply in the input field.</p>
-    <form action="action_page.php" method="post" class="mb-4">
-        <div class="form-group">
-            <label for="quantity">Quantity (between 1 and 5):</label>
-            <input type="number" id="quantity" name="quantity" class="form-control" min="1" max="5" required>
-        </div>
-        <input type="submit" class="btn btn-primary" value="Submit">
-    </form>
-    <hr>
-    <form action="action_page.php" method="post" class="mb-4">
-        <div class="form-group">
-            <input type="text" name="fname" class="form-control mb-2" placeholder="First name" required>
-            <input type="text" name="lname" class="form-control mb-2" placeholder="Last name" required>
-        </div>
-        <input type="submit" class="btn btn-primary" value="Submit">
-    </form>
-
-    <hr>
-    <form action="action_page.php" method="post">
-        <fieldset class="border p-2">
-            <legend class="w-auto">Personalia:</legend>
-            <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" class="form-control" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" class="form-control" required>
-            </div>
-            <div class="form-group">
-                <label for="dob">Date of birth:</label>
-                <input type="date" id="dob" name="dob" class="form-control" required>
-            </div>
-        </fieldset>
-        <input type="submit" class="btn btn-primary mt-3" value="Submit">
-    </form>
-    <hr>
-    <table class="table table-bordered bg-light mb-4">
-        <tr>
-            <td>
-                <h4>Facts About Beavers</h4>
-                <ul class="list-unstyled">
-                    <li><a href="habitat.html" target="abc">Habitats</a></li>
-                    <li><a href="food.html" target="abc">Food</a></li>
-                    <li><a href="health.html" target="abc">Health</a></li>
-                </ul>
-                <iframe name="abc" src="im1.jpg" width="300" height="200"></iframe>
-            </td>
-        </tr>
-    </table>
-    <hr>
-     <a href="https://sameeradgsm.github.io/GPA_Cal_1st_Sem_BIT/">Semester 1 BIT Calculator</a>
-    <p>The character U+10FFFF: &#54440;</p>
-    <hr>
     <!-- Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
-</html>
 
+    <!-- Custom JS to switch content -->
+    <script>
+      function showSection(sectionId) {
+        document
+          .querySelectorAll(".content-section")
+          .forEach(function (section) {
+            section.style.display = "none";
+          });
+        document.getElementById(sectionId).style.display = "block";
+      }
+
+      // Show the welcome section by default
+      document.getElementById("welcome").style.display = "block";
+    </script>
+  </body>
+</html>
